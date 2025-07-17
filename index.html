@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biggest Porsche Car Showroom in Kerala | Neon Porsche</title>
+  <link rel="icon" href="./images/porscheLogo-removebg-preview.png">
+  <link rel="stylesheet" href="./src/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="dist/output.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet" />
+</head>
+
+<body class="bg-black text-white font-michroma">
+
+
+  <nav class="flex justify-between items-center px-8 py-4 bg-black/80 fixed w-full z-50 font-michroma">
+    <div>
+        <h1 class="text-2xl font-bold tracking-wide font-michroma">Neon Porsche</h1>
+        <p class="text-sm font-michroma">Your gateway to luxury</p>
+    </div>
+    <ul class="hidden md:flex space-x-8 text-sm uppercase">
+      <li><a href="./index.html" class="hover:text-red-600 transition-colors">Home</a></li>
+      <li><a href="./pages/models.html" class="hover:text-red-600 transition-colors">Models</a></li>
+      <li><a href="./pages/about.html" class="hover:text-red-600 transition-colors">About</a></li>
+      <li><a href="./pages/contact.html" class="hover:text-red-600 transition-colors">Contact</a></li>
+    </ul>
+<!-- hamburger-icon -->
+    <button id="mobile-menu-btn" class="md:hidden text-white" aria-label="Open menu">
+      <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black/95 z-40 md:hidden hidden">
+    <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+      <a href="./index.html" class="hover:text-red-600 transition-colors">Home</a>
+      <a href="./pages/models.html" class="hover:text-red-600 transition-colors">Models</a>
+      <a href="./pages/about.html" class="hover:text-red-600 transition-colors">About</a>
+      <a href="./pages/contact.html" class="hover:text-red-600 transition-colors">Contact</a>
+    </div>
+  </div>
+
+  <section class="relative flex justify-center items-center h-screen bg-cover bg-center porsche-bg">
+    <img src="./images/porsche-bg.jpg" alt="porsche background" class="hidden md:block md:w-[55%]">
+    <div class="relative z-20 text-center">
+      <p class="text-xl md:text-6xl font-bold animate-fade-in-up font-michroma">Neon Porsche</p>
+      <p class="mt-4 text-xl animate-fade-in-up delay-300 font-michroma">Authorized <span
+          class="text-red-600 font-semibold">PORSCHE</span> Dealer</p>
+      <a href="./pages/models.html"
+        class="mt-8 inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full transition-all duration-300 animate-fade-in-up delay-200 hover:scale-105 font-michroma">Explore
+        Models</a>
+    </div>
+  </section>
+
+
+  <section id="models" class="py-20 px-6 bg-neutral-900">
+    <h2 class="text-3xl text-center font-bold mb-12">Our Featured Models</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+        <img src="./images/P911.webp" alt="Porsche 911 Carrera" class="rounded mb-4">
+        <h3 class="text-xl font-semibold">Porsche 911 Carrera</h3>
+        <p class="text-sm text-gray-300 mb-4">Starting at ₹1.9 Cr</p>
+        <a href="./pages/contact.html" class="text-red-500 hover:underline">Enquire Now →</a>
+      </div>
+
+      <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+        <img src="./images/cayenne.webp" alt="Porsche Cayenne" class="rounded mb-4">
+        <h3 class="text-xl font-semibold">Porsche Cayenne</h3>
+        <p class="text-sm text-gray-300 mb-4">Starting at ₹1.4 Cr</p>
+        <a href="./pages/contact.html" class="text-red-500 hover:underline">Enquire Now →</a>
+      </div>
+
+      <div class="bg-neutral-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+        <img src="./images/taycan.webp" alt="Porsche Taycan" class="rounded mb-4">
+        <h3 class="text-xl font-semibold">Porsche Taycan</h3>
+        <p class="text-sm text-gray-300 mb-4">Starting at ₹1.6 Cr</p>
+        <a href="./pages/contact.html" class="text-red-500 hover:underline">Enquire Now →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="bg-black py-20 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">About the Dealer</h2>
+      <p class="text-gray-400 text-lg">
+        I'm <span class="text-white font-semibold">Sugu</span>, your official Porsche dealer based in Kerala.
+        Backed by trust and certified excellence, I bring you the most premium Porsche experience right to your city.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="contact" class="bg-neutral-900 py-20 px-6">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Book Your Test Drive</h2>
+      <form class="space-y-6">
+        <input type="text" placeholder="Full Name"
+          class="w-full p-3 bg-black border border-gray-700 rounded-md text-white" />
+        <input type="email" placeholder="Email"
+          class="w-full p-3 bg-black border border-gray-700 rounded-md text-white" />
+        <input type="text" placeholder="Phone Number"
+          class="w-full p-3 bg-black border border-gray-700 rounded-md text-white" />
+        <textarea rows="4" placeholder="Your message..."
+          class="w-full p-3 bg-black border border-gray-700 rounded-md text-white"></textarea>
+        <button type="submit" class="w-full bg-red-600 hover:bg-red-700 p-3 rounded-md font-semibold">Send
+          Inquiry</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-black text-center text-sm py-6 text-gray-500">
+    © 2025 Neon Porsche. All rights reserved.
+  </footer>
+
+  <script src="./src/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Neon Porsche</title>
+  <link rel="icon" href="../images/porscheLogo-removebg-preview.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body class="bg-black h-screen text-white font-michroma">
+
+  <nav class="flex justify-between items-center px-8 py-4 bg-black/80 fixed w-full z-50">
+    <div>
+        <h1 class="text-2xl font-bold tracking-wide font-michroma sm:">Neon Porsche</h1>
+        <p class="text-sm">Your gateway to luxury</p>
+    </div>
+    <ul class="hidden md:flex space-x-8 text-sm uppercase">
+      <li><a href="../index.html" class="hover:text-red-600 transition-colors">Home</a></li>
+      <li><a href="./models.html" class="hover:text-red-600 transition-colors">Models</a></li>
+      <li><a href="./about.html" class="hover:text-red-600 transition-colors">About</a></li>
+      <li><a href="./contact.html" class="hover:text-red-600 transition-colors">Contact</a></li>
+    </ul>
+
+    <button id="mobile-menu-btn" class="md:hidden text-white" aria-label="Open menu">
+      <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+      <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="fixed inset-0 bg-black/95 z-40 md:hidden hidden">
+    <div class="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+      <a href="../index.html" class="hover:text-red-600 transition-colors">Home</a>
+      <a href="./models.html" class="hover:text-red-600 transition-colors">Models</a>
+      <a href="./about.html" class="hover:text-red-600 transition-colors">About</a>
+      <a href="./contact.html" class="hover:text-red-600 transition-colors">Contact</a>
+    </div>
+  </div>
+
+  <section class="max-w-4xl mx-auto py-20 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-4">Meet Your Dealer</h2>
+    <p class="text-lg text-gray-300">
+      I'm <span class="text-white font-bold">Sugu</span>, an officially authorized Porsche dealer bringing top-tier
+      German automotive engineering to Kerala.
+      With passion for excellence and client trust, my mission is to deliver the Porsche experience you deserve.
+    </p>
+    <div class="mt-10">
+      <img src="../images/ME.jpg" alt="Sugu"
+        class="mx-auto rounded-full w-40 h-40 object-cover border-4 border-red-600">
+      <p class="mt-4 text-gray-400">Founder | Authorized Dealer | Auto Enthusiast</p>
+    </div>
+  </section>
+  <footer class="bg-black text-center text-sm mt-24 lg:mt-24 text-gray-500">
+    © 2025 Neon Porsche. All rights reserved.
+  </footer>
+  <script src="../src/script.js"></script>
+</body>
+
+</html>
